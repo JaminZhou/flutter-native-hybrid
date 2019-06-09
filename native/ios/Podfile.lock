@@ -1,0 +1,21 @@
+PODS:
+  - JZFlutter (0.0.1)
+
+DEPENDENCIES:
+  - JZFlutter (from `https://github.com/JaminZhou/JustTest`)
+
+EXTERNAL SOURCES:
+  JZFlutter:
+    :git: https://github.com/JaminZhou/JustTest
+
+CHECKOUT OPTIONS:
+  JZFlutter:
+    :commit: b48dd4224179b3db04fb93628ae4e32d6f4b337e
+    :git: https://github.com/JaminZhou/JustTest
+
+SPEC CHECKSUMS:
+  JZFlutter: 18d62959366b39aafe8fcea985d8ab45e42a4680
+
+PODFILE CHECKSUM: 32082bd01d00bedf61618a630cf414b32f89b0bb
+
+COCOAPODS: 1.7.0

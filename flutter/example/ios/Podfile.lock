@@ -1,0 +1,44 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_boost (0.0.1):
+    - Flutter
+    - xservice_kit
+  - flutter_bridge (0.0.1):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+    - flutter_boost
+    - flutter_bridge
+    - xservice_kit
+  - xservice_kit (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `../../module/.ios/Flutter/engine`)
+  - flutter_boost (from `../../module/.ios/Flutter/.symlinks/flutter_boost/ios`)
+  - flutter_bridge (from `../../module/.ios/Flutter/.symlinks/flutter_bridge/ios`)
+  - FlutterPluginRegistrant (from `../../module/.ios/Flutter/FlutterPluginRegistrant`)
+  - xservice_kit (from `../../module/.ios/Flutter/.symlinks/xservice_kit/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../../module/.ios/Flutter/engine"
+  flutter_boost:
+    :path: "../../module/.ios/Flutter/.symlinks/flutter_boost/ios"
+  flutter_bridge:
+    :path: "../../module/.ios/Flutter/.symlinks/flutter_bridge/ios"
+  FlutterPluginRegistrant:
+    :path: "../../module/.ios/Flutter/FlutterPluginRegistrant"
+  xservice_kit:
+    :path: "../../module/.ios/Flutter/.symlinks/xservice_kit/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+  flutter_boost: 0e85ea37c74ed39ee7b91a35612afa1605557484
+  flutter_bridge: 0042ab8f3fa61c4a9801fe0469ad2ca44195de16
+  FlutterPluginRegistrant: 90eeaee978aa44883c8280f2718b2deeef1cfcbc
+  xservice_kit: a2f1b35addc126fce8687aeb183ab0c1ada5b7f3
+
+PODFILE CHECKSUM: 73d2c3461288d5ef179bc34564dc0f428836db03
+
+COCOAPODS: 1.7.0
