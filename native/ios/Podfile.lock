@@ -2,15 +2,15 @@ PODS:
   - JZFlutter (0.0.1)
 
 DEPENDENCIES:
-  - JZFlutter (from `../../`)
+  - JZFlutter (from `https://raw.githubusercontent.com/JaminZhou/flutter-native-hybrid/master/JZFlutter.podspec`)
 
 EXTERNAL SOURCES:
   JZFlutter:
-    :path: "../../"
+    :podspec: https://raw.githubusercontent.com/JaminZhou/flutter-native-hybrid/master/JZFlutter.podspec
 
 SPEC CHECKSUMS:
   JZFlutter: 3480195b0f5948301906fb4f00534f852ced30b3
 
-PODFILE CHECKSUM: 7b296336f2abeec2c63d5ea0d792737163a80845
+PODFILE CHECKSUM: ebe1b21fa0f5015817899a1795ca32a066d74779
 
 COCOAPODS: 1.7.1
