@@ -2,6 +2,9 @@
 platform :ios, '9.0'
 
 target 'native' do
-  #pod 'JZFlutter', :path => '../../'
-  pod 'JZFlutter', :git => 'https://github.com/JaminZhou/JustTest'
+  # Use local pod when in development
+  pod 'JZFlutter', :path => '../../'
+
+  # if run in release mode(major, minor, patch) will not contain x86 architecture
+  # pod 'JZFlutter', :git => 'https://github.com/JaminZhou/flutter-native-hybrid'
 end

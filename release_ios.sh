@@ -96,7 +96,7 @@ if [ "$debug" == "true" ]; then
 		xcrun xcodebuild build -configuration Debug ARCHS='x86_64' -target ${library} BUILD_DIR=$build_dir -sdk iphonesimulator -quiet
 
 		echo "lipo library $library"
-		lipo -create "$build_dir/Debug-iphonesimulator/$library/lib$library.a" "../../$LIBRARY_PATH/lib$library.a" -o "../../$LIBRARY_PATH/lib$library.a"
+		lipo -create "$build_dir/Debug-iphonesimulator/$library/lib$library.a" "$LIBRARY_PATH/lib$library.a" -o "$LIBRARY_PATH/lib$library.a"
 	done
 else
 	FLUTTER_PATCH="$FRAMEWORK_PATH/Flutter.framework/Flutter"
@@ -110,11 +110,11 @@ sed -i "" -E "$podspec_sed_regex" $PODSPEC_PATH
 ZIP_NAME="JZFlutter-$new_version.zip"
 UPLOAD_URL="https://pods.jaminzhou.com/upload"
 
-cd $POD_PATH
-zip -r "$CURRENT_PATH/$ZIP_NAME" *
-
 cd $CURRENT_PATH
 rm -rf $ZIP_NAME
+zip -r "$CURRENT_PATH/$ZIP_NAME" repo/ios
+
+cd $CURRENT_PATH
 response=$(curl -X PUT -F "zip=@$ZIP_NAME" $UPLOAD_URL)
 
 new_podsepc_source=$(awk 'BEGIN{FS="\""}{print $4}' <<< "${response}")

@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <flutter_bridge/FlutterBridgePlugin.h>
-#import <flutter_boost/FlutterBoost.h>
+#import "FlutterBridgePlugin.h"
+#import "FlutterBoost.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

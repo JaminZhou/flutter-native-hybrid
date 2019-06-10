@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "FlutterBoost.h"
+#import "FlutterBridgePlugin.h"
+#import "FlutterBridge.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [FlutterBridgePlugin registerFlutterBridge:[FlutterBridge new]];
+    [FlutterBoostPlugin.sharedInstance startFlutterWithPlatform:[FlutterBridge new] onStart:^(FlutterEngine *engine) {
+        
+    }];
     return YES;
 }
 

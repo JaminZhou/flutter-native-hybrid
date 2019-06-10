@@ -14,6 +14,7 @@
 		7A43394E22ABF6B600EF0D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A43394C22ABF6B600EF0D8E /* LaunchScreen.storyboard */; };
 		7A43395122ABF6B600EF0D8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A43395022ABF6B600EF0D8E /* main.m */; };
 		CD1F48C6BD925EA7B03C4BE6 /* libPods-native.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E33241893DC915437D6E0287 /* libPods-native.a */; };
+		F83AA78722AE36DF00218576 /* FlutterBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F83AA78622AE36DF00218576 /* FlutterBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		7A43395022ABF6B600EF0D8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E33241893DC915437D6E0287 /* libPods-native.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-native.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23875F3F1C20C4CD300F6E2 /* Pods-native.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native.release.xcconfig"; path = "Target Support Files/Pods-native/Pods-native.release.xcconfig"; sourceTree = "<group>"; };
+		F83AA78522AE36DF00218576 /* FlutterBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlutterBridge.h; path = ../../../flutter/example/ios/example/FlutterBridge.h; sourceTree = "<group>"; };
+		F83AA78622AE36DF00218576 /* FlutterBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlutterBridge.m; path = ../../../flutter/example/ios/example/FlutterBridge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				7A43394222ABF6B400EF0D8E /* AppDelegate.m */,
 				7A43394422ABF6B400EF0D8E /* ViewController.h */,
 				7A43394522ABF6B400EF0D8E /* ViewController.m */,
+				F83AA78522AE36DF00218576 /* FlutterBridge.h */,
+				F83AA78622AE36DF00218576 /* FlutterBridge.m */,
 				7A43394722ABF6B400EF0D8E /* Main.storyboard */,
 				7A43394A22ABF6B600EF0D8E /* Assets.xcassets */,
 				7A43394C22ABF6B600EF0D8E /* LaunchScreen.storyboard */,
@@ -106,6 +111,7 @@
 				7A43393A22ABF6B400EF0D8E /* Sources */,
 				7A43393B22ABF6B400EF0D8E /* Frameworks */,
 				7A43393C22ABF6B400EF0D8E /* Resources */,
+				AE8B5907EE12D607C4B0D2B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +190,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AE8B5907EE12D607C4B0D2B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-native/Pods-native-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-native/Pods-native-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-native/Pods-native-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -192,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A43394622ABF6B400EF0D8E /* ViewController.m in Sources */,
+				F83AA78722AE36DF00218576 /* FlutterBridge.m in Sources */,
 				7A43395122ABF6B600EF0D8E /* main.m in Sources */,
 				7A43394322ABF6B400EF0D8E /* AppDelegate.m in Sources */,
 			);
@@ -338,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NA4X3TYR2P;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = native/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -357,6 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NA4X3TYR2P;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = native/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

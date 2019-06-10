@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Native Demo-->
+        <!--Native Module Example-->
         <scene sceneID="7qp-JM-cuf">
             <objects>
                 <tableViewController id="gjo-Ed-3WX" customClass="ViewController" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                             <outlet property="delegate" destination="gjo-Ed-3WX" id="T7o-Zm-PBq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Native Demo" id="an1-8n-9qy"/>
+                    <navigationItem key="navigationItem" title="Native Module Example" id="an1-8n-9qy"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MqC-QK-FkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
