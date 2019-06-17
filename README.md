@@ -1,5 +1,10 @@
 # flutter-native-hybrid
 
+## 文章
+
+* [Medium](https://medium.com/@jaminzhou/flutter%E5%BC%80%E5%8F%91%E5%B9%B2%E8%B4%A7-%E5%85%B3%E4%BA%8Eflutter%E5%92%8C%E5%B7%B2%E6%9C%89app%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83%E5%92%8C%E6%8E%A2%E7%B4%A2-e3e8dc5f6c9b)
+* [知乎](https://zhuanlan.zhihu.com/p/67371761)
+
 ## 如何使用release_ios.sh和release_release.sh
 
 ### iOS
